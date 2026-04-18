@@ -34,7 +34,7 @@
                     <li><a href="#hero" class="nav-link" data-text="Home">Home</a></li>
                     <li><a href="#about" class="nav-link" data-text="About">About</a></li>
                     <li><a href="#services" class="nav-link" data-text="Services">Services</a></li>
-                    <li><a href="gallery.html" class="nav-link" data-text="Gallery">Gallery</a></li>
+                    <li><a href="gallery.php" class="nav-link" data-text="Gallery">Gallery</a></li>
                     <li><a href="#testimonials" class="nav-link" data-text="Reviews">Reviews</a></li>
 
                 </ul>
@@ -60,7 +60,7 @@
                 <li><a href="#hero" class="mobile-link"><span>Home</span></a></li>
                 <li><a href="#about" class="mobile-link"><span>About</span></a></li>
                 <li><a href="#services" class="mobile-link"><span>Services</span></a></li>
-                <li><a href="gallery.html" class="mobile-link"><span>Gallery</span></a></li>
+                <li><a href="gallery.php" class="mobile-link"><span>Gallery</span></a></li>
                 <li><a href="#testimonials" class="mobile-link"><span>Reviews</span></a></li>
 
                 <li><a href="#booking" class="mobile-link"><span>Book Now</span></a></li>
@@ -304,7 +304,7 @@
                 </div>
             </div>
             <div class="gallery-view-all reveal" style="text-align:center; margin-top:48px;">
-                <a href="gallery.html" class="btn-main">
+                <a href="gallery.php" class="btn-main">
                     <span>View Full Gallery</span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </a>
@@ -513,7 +513,7 @@
                     <ul>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
                         <li><a href="#booking">Book Now</a></li>
                     </ul>
                 </div>

@@ -26,20 +26,20 @@
     <!-- ========== NAVIGATION ========== -->
     <nav class="navbar" id="navbar">
         <div class="nav-inner">
-            <a href="index.html" class="nav-logo">
+            <a href="index.php" class="nav-logo">
                 <img src="logo-pink.png" alt="Magic Mirror">
             </a>
             <div class="nav-center">
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="nav-link" data-text="Home">Home</a></li>
-                    <li><a href="index.html#about" class="nav-link" data-text="About">About</a></li>
-                    <li><a href="index.html#services" class="nav-link" data-text="Services">Services</a></li>
-                    <li><a href="gallery.html" class="nav-link active" data-text="Gallery">Gallery</a></li>
-                    <li><a href="index.html#testimonials" class="nav-link" data-text="Reviews">Reviews</a></li>
+                    <li><a href="index.php" class="nav-link" data-text="Home">Home</a></li>
+                    <li><a href="index.php#about" class="nav-link" data-text="About">About</a></li>
+                    <li><a href="index.php#services" class="nav-link" data-text="Services">Services</a></li>
+                    <li><a href="gallery.php" class="nav-link active" data-text="Gallery">Gallery</a></li>
+                    <li><a href="index.php#testimonials" class="nav-link" data-text="Reviews">Reviews</a></li>
                 </ul>
             </div>
             <div class="nav-right">
-                <a href="index.html#booking" class="nav-cta">
+                <a href="index.php#booking" class="nav-cta">
                     <span>Book Now</span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </a>
@@ -56,12 +56,12 @@
     <div class="mobile-menu" id="mobileMenu">
         <div class="mobile-menu-inner">
             <ul class="mobile-nav-links">
-                <li><a href="index.html" class="mobile-link"><span>Home</span></a></li>
-                <li><a href="index.html#about" class="mobile-link"><span>About</span></a></li>
-                <li><a href="index.html#services" class="mobile-link"><span>Services</span></a></li>
-                <li><a href="gallery.html" class="mobile-link"><span>Gallery</span></a></li>
-                <li><a href="index.html#testimonials" class="mobile-link"><span>Reviews</span></a></li>
-                <li><a href="index.html#booking" class="mobile-link"><span>Book Now</span></a></li>
+                <li><a href="index.php" class="mobile-link"><span>Home</span></a></li>
+                <li><a href="index.php#about" class="mobile-link"><span>About</span></a></li>
+                <li><a href="index.php#services" class="mobile-link"><span>Services</span></a></li>
+                <li><a href="gallery.php" class="mobile-link"><span>Gallery</span></a></li>
+                <li><a href="index.php#testimonials" class="mobile-link"><span>Reviews</span></a></li>
+                <li><a href="index.php#booking" class="mobile-link"><span>Book Now</span></a></li>
             </ul>
             <div class="mobile-menu-footer">
                 <p>hello@magicmirror.com</p>
@@ -322,7 +322,7 @@
             <div class="gallery-cta-inner reveal">
                 <h2>Ready for Your Transformation?</h2>
                 <p>Book a session and let us create your perfect look</p>
-                <a href="index.html#booking" class="btn-main">
+                <a href="index.php#booking" class="btn-main">
                     <span>Book Now</span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </a>
@@ -355,19 +355,19 @@
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="index.html#booking">Book Now</a></li>
+                        <li><a href="index.php#about">About</a></li>
+                        <li><a href="index.php#services">Services</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
+                        <li><a href="index.php#booking">Book Now</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="index.html#services">Bridal Makeover</a></li>
-                        <li><a href="index.html#services">Party Makeup</a></li>
-                        <li><a href="index.html#services">Skincare</a></li>
-                        <li><a href="index.html#services">Hair Styling</a></li>
+                        <li><a href="index.php#services">Bridal Makeover</a></li>
+                        <li><a href="index.php#services">Party Makeup</a></li>
+                        <li><a href="index.php#services">Skincare</a></li>
+                        <li><a href="index.php#services">Hair Styling</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
