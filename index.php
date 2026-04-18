@@ -3,12 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magic Mirror — Makeover Studio</title>
+    <title>Magic Mirror Makeover Studio | Bridal Makeup, Hair Styling & Skincare in Calicut</title>
+    <meta name="description" content="Magic Mirror Makeover Studio in Calicut offers premium bridal makeup, party glam, hair styling, skincare treatments & personal styling. 2500+ happy clients. Book your appointment today!">
+    <meta name="keywords" content="makeover studio Calicut, bridal makeup Calicut, hair styling Kozhikode, skincare treatment Calicut, party makeup Kerala, beauty salon Calicut, wedding makeup artist Calicut, personal styling Kozhikode">
+    <meta name="author" content="Magic Mirror Makeover Studio">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.magicmirrorstudio.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.magicmirrorstudio.com/">
+    <meta property="og:title" content="Magic Mirror Makeover Studio | Premium Beauty Services in Calicut">
+    <meta property="og:description" content="Premium bridal makeup, party glam, hair styling, skincare & personal styling in Calicut. 2500+ happy clients. Book your transformation today!">
+    <meta property="og:image" content="https://www.magicmirrorstudio.com/logo-pink.png">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Magic Mirror Makeover Studio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Magic Mirror Makeover Studio | Premium Beauty Services in Calicut">
+    <meta name="twitter:description" content="Premium bridal makeup, party glam, hair styling, skincare & personal styling in Calicut. Book your transformation today!">
+    <meta name="twitter:image" content="https://www.magicmirrorstudio.com/logo-pink.png">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN-KL">
+    <meta name="geo.placename" content="Calicut">
+
     <link rel="icon" type="image/png" href="logo-pink.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Structured Data: Local Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "Magic Mirror Makeover Studio",
+        "image": "https://www.magicmirrorstudio.com/logo-pink.png",
+        "url": "https://www.magicmirrorstudio.com",
+        "telephone": "+919947758899",
+        "email": "hello@magicmirror.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Pallikkara Road, Nandi Bazar",
+            "addressLocality": "Calicut",
+            "addressRegion": "Kerala",
+            "addressCountry": "IN"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                "opens": "09:00",
+                "closes": "20:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "10:00",
+                "closes": "18:00"
+            }
+        ],
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "2500"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Beauty Services",
+            "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bridal Makeover"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Party Glam Makeup"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Skincare Treatments"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hair Styling"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Personal Styling"}}
+            ]
+        }
+    }
+    </script>
+
+    <!-- Structured Data: Website with SearchAction -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Magic Mirror Makeover Studio",
+        "url": "https://www.magicmirrorstudio.com"
+    }
+    </script>
+
+    <!-- Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.magicmirrorstudio.com/"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Custom Cursor -->
@@ -23,8 +125,9 @@
         </div>
     </div>
 
+    <main>
     <!-- ========== NAVIGATION ========== -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
         <div class="nav-inner">
             <a href="#hero" class="nav-logo">
                 <img src="logo-pink.png" alt="Magic Mirror">
@@ -73,7 +176,7 @@
     </div>
 
     <!-- ========== HERO ========== -->
-    <section class="hero" id="hero">
+    <section class="hero" id="hero" role="banner" aria-label="Welcome to Magic Mirror Makeover Studio">
         <div class="hero-bg">
             <div class="gradient-orb orb-1"></div>
             <div class="gradient-orb orb-2"></div>
@@ -486,6 +589,7 @@
         </div>
     </section>
 
+    </main>
     <!-- ========== FOOTER ========== -->
     <footer class="footer">
         <div class="container">

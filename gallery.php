@@ -3,12 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery — Magic Mirror Makeover Studio</title>
+    <title>Transformation Gallery | Magic Mirror Makeover Studio Calicut</title>
+    <meta name="description" content="Explore our gallery of stunning bridal makeovers, party glam looks, hair styling, and skincare transformations at Magic Mirror Makeover Studio, Calicut.">
+    <meta name="keywords" content="bridal makeover gallery, makeup transformation Calicut, hair styling portfolio, beauty salon gallery Kozhikode, makeover before after, wedding makeup gallery Kerala">
+    <meta name="author" content="Magic Mirror Makeover Studio">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.magicmirrorstudio.com/gallery.php">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.magicmirrorstudio.com/gallery.php">
+    <meta property="og:title" content="Transformation Gallery | Magic Mirror Makeover Studio">
+    <meta property="og:description" content="Explore stunning bridal makeovers, party glam, hair styling, and skincare transformations. See why 2500+ clients trust Magic Mirror.">
+    <meta property="og:image" content="https://www.magicmirrorstudio.com/logo-pink.png">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Magic Mirror Makeover Studio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Transformation Gallery | Magic Mirror Makeover Studio">
+    <meta name="twitter:description" content="Explore stunning bridal makeovers, party glam, hair styling, and skincare transformations at Magic Mirror.">
+    <meta name="twitter:image" content="https://www.magicmirrorstudio.com/logo-pink.png">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN-KL">
+    <meta name="geo.placename" content="Calicut">
+
     <link rel="icon" type="image/png" href="logo-pink.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.magicmirrorstudio.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Gallery",
+                "item": "https://www.magicmirrorstudio.com/gallery.php"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Structured Data: ImageGallery -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ImageGallery",
+        "name": "Magic Mirror Transformation Gallery",
+        "description": "Portfolio of bridal makeovers, party glam looks, hair styling, skincare treatments, and makeover transformations.",
+        "url": "https://www.magicmirrorstudio.com/gallery.php",
+        "publisher": {
+            "@type": "BeautySalon",
+            "name": "Magic Mirror Makeover Studio"
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Custom Cursor -->
@@ -23,8 +85,9 @@
         </div>
     </div>
 
+    <main>
     <!-- ========== NAVIGATION ========== -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
         <div class="nav-inner">
             <a href="index.php" class="nav-logo">
                 <img src="logo-pink.png" alt="Magic Mirror">
@@ -330,6 +393,7 @@
         </div>
     </section>
 
+    </main>
     <!-- ========== FOOTER ========== -->
     <footer class="footer">
         <div class="container">

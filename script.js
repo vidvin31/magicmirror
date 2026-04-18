@@ -190,19 +190,49 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
             const nameVal = form.querySelector('#name').value;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnHTML = submitBtn.innerHTML;
 
-            form.parentElement.innerHTML = `
-                <div class="form-success">
-                    <div class="success-checkmark">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                    </div>
-                    <h3>Thank You, ${nameVal}!</h3>
-                    <p>Your appointment request has been received. We'll contact you within 24 hours to confirm.</p>
-                </div>
-            `;
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span>Sending...</span>';
+
+            // Collect form data + device info
+            const formData = new FormData(form);
+            formData.append('screen_size', window.screen.width + 'x' + window.screen.height);
+            formData.append('platform', navigator.platform || navigator.userAgentData?.platform || '');
+            formData.append('language', navigator.language || '');
+
+            fetch('send-booking.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    form.parentElement.innerHTML = `
+                        <div class="form-success">
+                            <div class="success-checkmark">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <h3>Thank You, ${nameVal}!</h3>
+                            <p>Your appointment request has been received. We'll contact you within 24 hours to confirm.</p>
+                        </div>
+                    `;
+                } else {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtnHTML;
+                    alert(data.message || 'Something went wrong. Please try again.');
+                }
+            })
+            .catch(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnHTML;
+                alert('Network error. Please try again or call us at +91 9947758899.');
+            });
         });
     }
 
