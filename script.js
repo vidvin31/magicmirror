@@ -207,7 +207,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 method: 'POST',
                 body: formData
             })
-            .then(res => res.json())
+            .then(res => {
+                if (!res.ok && res.status !== 400) {
+                    throw new Error('Server error');
+                }
+                return res.json();
+            })
             .then(data => {
                 if (data.success) {
                     form.parentElement.innerHTML = `

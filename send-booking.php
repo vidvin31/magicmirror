@@ -158,11 +158,15 @@ $headers .= "From: Magic Mirror <noreply@magicmirrorstudio.com>\r\n";
 $headers .= "Reply-To: $email\r\n";
 
 // Send
-$sent = mail($to, $subject, $emailBody, $headers);
+try {
+    $sent = @mail($to, $subject, $emailBody, $headers);
+} catch (\Throwable $e) {
+    $sent = false;
+}
 
 if ($sent) {
     echo json_encode(['success' => true, 'message' => 'Booking sent successfully.']);
 } else {
     http_response_code(500);
-    echo json_encode(['success' => false, 'message' => 'Failed to send email. Please call us directly.']);
+    echo json_encode(['success' => false, 'message' => 'Failed to send email. Please call us directly at +91 9947758899.']);
 }
