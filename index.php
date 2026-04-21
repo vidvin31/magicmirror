@@ -504,90 +504,90 @@
 
 
 
-    <!-- ========== BOOKING ========== -->
-    <section class="section booking" id="booking">
-        <div class="container">
-            <div class="booking-wrapper">
-                <div class="booking-left reveal">
-                    <div class="section-tag">Get Started</div>
-                    <h2 class="section-title">Book Your <em>Session</em></h2>
-                    <p class="booking-desc">Fill the form and our team will confirm your appointment within 24 hours.</p>
-                    <div class="contact-cards">
-                        <div class="contact-card">
-                            <div class="cc-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <!-- ========== BOOKING ========== -->
+        <section class="section booking" id="booking">
+            <div class="container">
+                <div class="booking-wrapper">
+                    <div class="booking-left reveal">
+                        <div class="section-tag">Get Started</div>
+                        <h2 class="section-title">Book Your <em>Session</em></h2>
+                        <p class="booking-desc">Fill the form and our team will confirm your appointment within 24 hours.</p>
+                        <div class="contact-cards">
+                            <div class="contact-card">
+                                <div class="cc-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <strong>Visit</strong>
+                                    <p>Pallikkara Road, Nandi Bazar, Calicut</p>
+                                </div>
                             </div>
-                            <div>
-                                <strong>Visit</strong>
-                                <p>Pallikkara Road, Nandi Bazar, Calicut</p>
+                            <div class="contact-card">
+                                <div class="cc-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div>
+                                    <strong>Call</strong>
+                                    <p>+91 9947758899</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contact-card">
-                            <div class="cc-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            </div>
-                            <div>
-                                <strong>Call</strong>
-                                <p>+91 9947758899</p>
-                            </div>
-                        </div>
-                        <div class="contact-card">
-                            <div class="cc-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                            </div>
-                            <div>
-                                <strong>Hours</strong>
-                                <p>Mon&ndash;Sat 9AM&ndash;8PM &middot; Sun 10AM&ndash;6PM</p>
+                            <div class="contact-card">
+                                <div class="cc-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                </div>
+                                <div>
+                                    <strong>Hours</strong>
+                                    <p>Mon&ndash;Sat 9AM&ndash;8PM &middot; Sun 10AM&ndash;6PM</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="booking-right reveal">
-                    <form class="modern-form" id="bookingForm">
-                        <div class="form-duo">
-                            <div class="input-wrap">
-                                <input type="text" id="name" name="name" required placeholder=" ">
-                                <label for="name">Full Name</label>
+                    <div class="booking-right reveal">
+                        <form class="modern-form" id="bookingForm">
+                            <div class="form-duo">
+                                <div class="input-wrap">
+                                    <input type="text" id="name" name="name" required placeholder=" ">
+                                    <label for="name">Full Name</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="tel" id="phone" name="phone" required placeholder=" ">
+                                    <label for="phone">Phone</label>
+                                </div>
                             </div>
                             <div class="input-wrap">
-                                <input type="tel" id="phone" name="phone" required placeholder=" ">
-                                <label for="phone">Phone</label>
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Email Address</label>
                             </div>
-                        </div>
-                        <div class="input-wrap">
-                            <input type="email" id="email" name="email" required placeholder=" ">
-                            <label for="email">Email Address</label>
-                        </div>
-                        <div class="form-duo">
+                            <div class="form-duo">
+                                <div class="input-wrap">
+                                    <select id="service" name="service" required>
+                                        <option value="" disabled selected></option>
+                                        <option value="bridal">Bridal Makeover</option>
+                                        <option value="party">Party Makeup</option>
+                                        <option value="skincare">Skincare Treatment</option>
+                                        <option value="hair">Hair Styling</option>
+                                        <option value="styling">Personal Styling</option>
+                                    </select>
+                                    <label for="service">Service</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="date" id="date" name="date" required placeholder=" ">
+                                    <label for="date">Preferred Date</label>
+                                </div>
+                            </div>
                             <div class="input-wrap">
-                                <select id="service" name="service" required>
-                                    <option value="" disabled selected></option>
-                                    <option value="bridal">Bridal Makeover</option>
-                                    <option value="party">Party Makeup</option>
-                                    <option value="skincare">Skincare Treatment</option>
-                                    <option value="hair">Hair Styling</option>
-                                    <option value="styling">Personal Styling</option>
-                                </select>
-                                <label for="service">Service</label>
+                                <textarea id="message" name="message" rows="3" placeholder=" "></textarea>
+                                <label for="message">Special Requests</label>
                             </div>
-                            <div class="input-wrap">
-                                <input type="date" id="date" name="date" required placeholder=" ">
-                                <label for="date">Preferred Date</label>
-                            </div>
-                        </div>
-                        <div class="input-wrap">
-                            <textarea id="message" name="message" rows="3" placeholder=" "></textarea>
-                            <label for="message">Special Requests</label>
-                        </div>
-                        <button type="submit" class="btn-main btn-full">
-                            <span>Book My Session</span>
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M5 9h8M10 5l3.5 4-3.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </button>
-                    </form>
+                            <button type="submit" class="btn-main btn-full">
+                                <span>Book My Session</span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M5 9h8M10 5l3.5 4-3.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     </main>
     <!-- ========== FOOTER ========== -->
