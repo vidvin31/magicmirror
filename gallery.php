@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transformation Gallery | Magic Mirror Makeover Studio Calicut</title>
-    <meta name="description" content="Explore our gallery of stunning bridal makeovers, party glam looks, hair styling, and skincare transformations at Magic Mirror Makeover Studio, Calicut.">
-    <meta name="keywords" content="bridal makeover gallery, makeup transformation Calicut, hair styling portfolio, beauty salon gallery Kozhikode, makeover before after, wedding makeup gallery Kerala">
+    <meta name="description" content="Explore our gallery of stunning bridal makeovers, party glam looks, hair styling, skincare transformations and rental bridal jewellery at Magic Mirror Makeover Studio, Calicut.">
+    <meta name="keywords" content="bridal makeover gallery, makeup transformation Calicut, hair styling portfolio, beauty salon gallery Kozhikode, bridal jewellery rental gallery, kundan polki temple jewellery Calicut, makeover before after, wedding makeup gallery Kerala">
     <meta name="author" content="Magic Mirror Makeover Studio">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.magicmirrorstudio.com/gallery.php">
@@ -14,8 +14,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.magicmirrorstudio.com/gallery.php">
     <meta property="og:title" content="Transformation Gallery | Magic Mirror Makeover Studio">
-    <meta property="og:description" content="Explore stunning bridal makeovers, party glam, hair styling, and skincare transformations. See why 2500+ clients trust Magic Mirror.">
-    <meta property="og:image" content="https://www.magicmirrorstudio.com/logo-pink.png">
+    <meta property="og:description" content="Explore stunning bridal makeovers, party glam, hair styling, and skincare transformations. See why 250+ clients trust Magic Mirror.">
+    <meta property="og:image" content="https://www.magicmirrorstudio.com/logo.png">
     <meta property="og:locale" content="en_IN">
     <meta property="og:site_name" content="Magic Mirror Makeover Studio">
 
@@ -23,13 +23,13 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Transformation Gallery | Magic Mirror Makeover Studio">
     <meta name="twitter:description" content="Explore stunning bridal makeovers, party glam, hair styling, and skincare transformations at Magic Mirror.">
-    <meta name="twitter:image" content="https://www.magicmirrorstudio.com/logo-pink.png">
+    <meta name="twitter:image" content="https://www.magicmirrorstudio.com/logo.png">
 
     <!-- Geo Tags -->
     <meta name="geo.region" content="IN-KL">
     <meta name="geo.placename" content="Calicut">
 
-    <link rel="icon" type="image/png" href="logo-pink.png">
+    <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,7 +80,7 @@
     <!-- Preloader -->
     <div class="preloader" id="preloader">
         <div class="preloader-inner">
-            <img src="logo-pink.png" alt="Magic Mirror" class="preloader-logo">
+            <img src="logo.png" alt="Magic Mirror" class="preloader-logo">
             <div class="preloader-bar"><div class="preloader-fill"></div></div>
         </div>
     </div>
@@ -90,7 +90,7 @@
     <nav class="navbar" id="navbar" aria-label="Main navigation">
         <div class="nav-inner">
             <a href="index.php" class="nav-logo">
-                <img src="logo-pink.png" alt="Magic Mirror">
+                <img src="logo.png" alt="Magic Mirror">
             </a>
             <div class="nav-center">
                 <ul class="nav-menu" id="navMenu">
@@ -157,224 +157,75 @@
                 <button class="filter-btn" data-filter="hair">Hair</button>
                 <button class="filter-btn" data-filter="makeover">Makeover</button>
                 <button class="filter-btn" data-filter="skincare">Skincare</button>
+                <button class="filter-btn" data-filter="jewellery">Jewellery</button>
             </div>
 
+<?php
+            // Gallery image data — wires real photos to each card
+            $galleryItems = [
+                // Featured curated row
+                ['cat'=>'bridal',    'label'=>'Bridal',    'title'=>'Signature Bridal',         'desc'=>'Heritage glamour reimagined for the modern bride', 'img'=>'images/bridal-1.jpeg',   'class'=>'gallery-card-tall'],
+                ['cat'=>'glam',      'label'=>'Glam',      'title'=>'Evening Glamour',          'desc'=>'Red-carpet ready perfection',                       'img'=>'images/glam-1.jpeg',     'class'=>''],
+                ['cat'=>'jewellery', 'label'=>'Jewellery', 'title'=>'Bridal Jewellery Set',     'desc'=>'Curated rental collection · from ₹1,500/day','img'=>'images/jwl-1.jpeg',     'class'=>''],
+                ['cat'=>'hair',      'label'=>'Hair',      'title'=>'Sculpted Updo',            'desc'=>'Volume, structure, story',                          'img'=>'images/hair-1.jpeg',     'class'=>''],
+                ['cat'=>'makeover',  'label'=>'Makeover',  'title'=>'Full Transformation',      'desc'=>'Before & after magic',                              'img'=>'images/hair-5.jpeg',     'class'=>'gallery-card-wide'],
+                ['cat'=>'skincare',  'label'=>'Skincare',  'title'=>'Glow Treatment',           'desc'=>'Radiance from within',                              'img'=>'images/hair-4.jpeg',     'class'=>''],
+
+                // Real client gallery (auto-categorised)
+                ['cat'=>'bridal',    'label'=>'Bridal',    'title'=>'Traditional Bride',        'desc'=>'Classic Kerala wedding glamour',                    'img'=>'images/gallery-01.jpeg', 'class'=>''],
+                ['cat'=>'bridal',    'label'=>'Bridal',    'title'=>'Bridal Portrait',          'desc'=>'Soft elegance · HD camera ready',            'img'=>'images/gallery-02.jpeg', 'class'=>'gallery-card-tall'],
+                ['cat'=>'makeover',  'label'=>'Makeover',  'title'=>'Reception Look',           'desc'=>'Polished and luminous',                             'img'=>'images/gallery-03.jpeg', 'class'=>''],
+                ['cat'=>'glam',      'label'=>'Glam',      'title'=>'Party Glow',               'desc'=>'For the night to remember',                         'img'=>'images/gallery-04.jpeg', 'class'=>''],
+                ['cat'=>'bridal',    'label'=>'Bridal',    'title'=>'Engagement Glam',          'desc'=>'Soft, dreamy, ethereal',                            'img'=>'images/gallery-05.jpeg', 'class'=>'gallery-card-wide'],
+                ['cat'=>'hair',      'label'=>'Hair',      'title'=>'Floral Hair Styling',      'desc'=>'Detailed, blossom-touched updo',                    'img'=>'images/gallery-06.jpeg', 'class'=>''],
+                ['cat'=>'jewellery', 'label'=>'Jewellery', 'title'=>'Temple Jewellery Rental',  'desc'=>'Heritage temple sets for the bride',                'img'=>'images/jwl-1.jpeg',      'class'=>'gallery-card-tall'],
+                ['cat'=>'glam',      'label'=>'Glam',      'title'=>'Modern Glam',              'desc'=>'Bold, confident, contemporary',                     'img'=>'images/gallery-07.jpeg', 'class'=>''],
+                ['cat'=>'bridal',    'label'=>'Bridal',    'title'=>'South Indian Bride',       'desc'=>'Tradition reimagined',                              'img'=>'images/gallery-08.jpeg', 'class'=>''],
+                ['cat'=>'makeover',  'label'=>'Makeover',  'title'=>'Soft Daily Glam',          'desc'=>'Everyday beauty elevated',                          'img'=>'images/gallery-09.jpeg', 'class'=>''],
+                ['cat'=>'bridal',    'label'=>'Bridal',    'title'=>'Christian Bridal',         'desc'=>'Soft and luminous bridal palette',                  'img'=>'images/gallery-10.jpeg', 'class'=>''],
+                ['cat'=>'hair',      'label'=>'Hair',      'title'=>'Bridal Bun Styling',       'desc'=>'Crafted with floral detailing',                     'img'=>'images/gallery-11.jpeg', 'class'=>'gallery-card-wide'],
+                ['cat'=>'glam',      'label'=>'Glam',      'title'=>'Sangeet Look',             'desc'=>'For the dance-floor moments',                       'img'=>'images/gallery-12.jpeg', 'class'=>''],
+                ['cat'=>'bridal',    'label'=>'Bridal',    'title'=>'Reception Bride',          'desc'=>'Modern romance',                                    'img'=>'images/gallery-13.jpeg', 'class'=>''],
+                ['cat'=>'makeover',  'label'=>'Makeover',  'title'=>'Saree Drape & Glam',       'desc'=>'Complete styling experience',                       'img'=>'images/gallery-14.jpeg', 'class'=>'gallery-card-tall'],
+                ['cat'=>'bridal',    'label'=>'Bridal',    'title'=>'Muslim Bridal',            'desc'=>'Elegance with modesty',                             'img'=>'images/gallery-15.jpeg', 'class'=>''],
+                ['cat'=>'hair',      'label'=>'Hair',      'title'=>'Cascading Curls',          'desc'=>'Volume and movement',                               'img'=>'images/hair-2.jpeg',     'class'=>''],
+                ['cat'=>'glam',      'label'=>'Glam',      'title'=>'Cocktail Glam',            'desc'=>'Chic and sophisticated',                            'img'=>'images/gallery-16.jpeg', 'class'=>''],
+                ['cat'=>'bridal',    'label'=>'Bridal',    'title'=>'Royal Wedding Glam',       'desc'=>'Fit for royalty',                                   'img'=>'images/gallery-17.jpeg', 'class'=>'gallery-card-wide'],
+                ['cat'=>'makeover',  'label'=>'Makeover',  'title'=>'Pre-Wedding Look',         'desc'=>'Soft, fresh, photogenic',                           'img'=>'images/gallery-18.jpeg', 'class'=>''],
+                ['cat'=>'bridal',    'label'=>'Bridal',    'title'=>'Mehendi Look',             'desc'=>'Vibrant joy, captured',                             'img'=>'images/gallery-19.jpeg', 'class'=>''],
+                ['cat'=>'hair',      'label'=>'Hair',      'title'=>'Modern Hairdo',            'desc'=>'Sleek styling',                                     'img'=>'images/hair-3.jpeg',     'class'=>''],
+                ['cat'=>'glam',      'label'=>'Glam',      'title'=>'Bold Glam',                'desc'=>'Statement evening look',                            'img'=>'images/gallery-20.jpeg', 'class'=>'gallery-card-tall'],
+                ['cat'=>'bridal',    'label'=>'Bridal',    'title'=>'Hindu Bridal',             'desc'=>'Traditional gold tones',                            'img'=>'images/gallery-21.jpeg', 'class'=>''],
+                ['cat'=>'makeover',  'label'=>'Makeover',  'title'=>'Studio Editorial',         'desc'=>'High-fashion artistry',                             'img'=>'images/gallery-22.jpeg', 'class'=>''],
+                ['cat'=>'bridal',    'label'=>'Bridal',    'title'=>'Bridal Closeup',           'desc'=>'Flawless skin finish',                              'img'=>'images/gallery-23.jpeg', 'class'=>'gallery-card-wide'],
+                ['cat'=>'hair',      'label'=>'Hair',      'title'=>'Long Hair Styling',        'desc'=>'Polished and weightless',                           'img'=>'images/gallery-24.jpeg', 'class'=>''],
+                ['cat'=>'glam',      'label'=>'Glam',      'title'=>'Smoky Eye Glam',           'desc'=>'Bold, dramatic, unforgettable',                     'img'=>'images/gallery-25.jpeg', 'class'=>''],
+                ['cat'=>'bridal',    'label'=>'Bridal',    'title'=>'Bridal Hair Detail',       'desc'=>'Intricate floral artistry',                         'img'=>'images/gallery-26.jpeg', 'class'=>''],
+                ['cat'=>'jewellery', 'label'=>'Jewellery', 'title'=>'Rental Jewellery Set',     'desc'=>'Premium pieces, sanitised after every use',         'img'=>'images/jwl-1.jpeg',      'class'=>'gallery-card-wide'],
+                ['cat'=>'makeover',  'label'=>'Makeover',  'title'=>'Family Function Look',     'desc'=>'Festive elegance',                                  'img'=>'images/gallery-27.jpeg', 'class'=>''],
+                ['cat'=>'bridal',    'label'=>'Bridal',    'title'=>'Final Reveal',             'desc'=>'The Magic Mirror moment',                           'img'=>'images/gallery-28.jpeg', 'class'=>'gallery-card-tall'],
+                ['cat'=>'hair',      'label'=>'Hair',      'title'=>'Braided Elegance',         'desc'=>'Intricate art in every strand',                     'img'=>'images/hair-6.jpeg',     'class'=>''],
+                ['cat'=>'skincare',  'label'=>'Skincare',  'title'=>'Hydra Facial',             'desc'=>'Deep cleansing luxury',                             'img'=>'images/hair-7.jpeg',     'class'=>''],
+                ['cat'=>'skincare',  'label'=>'Skincare',  'title'=>'Skin Glow Ritual',         'desc'=>'Pre-bridal radiance therapy',                       'img'=>'images/hair-8.jpeg',     'class'=>''],
+            ];
+            ?>
             <!-- Gallery Grid -->
             <div class="gallery-grid">
-                <!-- Row 1 -->
-                <div class="gallery-card reveal" data-category="bridal">
+                <?php foreach ($galleryItems as $i => $item): ?>
+                <figure class="gallery-card reveal <?= htmlspecialchars($item['class']) ?>" data-category="<?= htmlspecialchars($item['cat']) ?>">
                     <div class="gallery-card-inner">
-                        <div class="gallery-card-bg"></div>
-                        <div class="gallery-card-overlay">
-                            <span class="gallery-card-cat">Bridal</span>
-                            <h3>Elegant Bridal Look</h3>
-                            <p>Classic elegance meets modern beauty</p>
-                        </div>
-                        <button class="gallery-card-zoom" aria-label="View larger">
+                        <div class="gallery-card-bg" style="background-image:url('<?= htmlspecialchars($item['img']) ?>')" role="img" aria-label="<?= htmlspecialchars($item['title'].' — '.$item['label'].' service at Magic Mirror Studio Calicut') ?>"></div>
+                        <figcaption class="gallery-card-overlay">
+                            <span class="gallery-card-cat"><?= htmlspecialchars($item['label']) ?></span>
+                            <h3><?= htmlspecialchars($item['title']) ?></h3>
+                            <p><?= htmlspecialchars($item['desc']) ?></p>
+                        </figcaption>
+                        <button class="gallery-card-zoom" aria-label="View <?= htmlspecialchars($item['title']) ?> larger">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
                         </button>
                     </div>
-                </div>
-
-                <div class="gallery-card reveal" data-category="glam">
-                    <div class="gallery-card-inner">
-                        <div class="gallery-card-bg"></div>
-                        <div class="gallery-card-overlay">
-                            <span class="gallery-card-cat">Glam</span>
-                            <h3>Evening Glamour</h3>
-                            <p>Red carpet ready perfection</p>
-                        </div>
-                        <button class="gallery-card-zoom" aria-label="View larger">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="gallery-card gallery-card-tall reveal" data-category="bridal">
-                    <div class="gallery-card-inner">
-                        <div class="gallery-card-bg"></div>
-                        <div class="gallery-card-overlay">
-                            <span class="gallery-card-cat">Bridal</span>
-                            <h3>Royal Wedding Glam</h3>
-                            <p>Fit for royalty, crafted with love</p>
-                        </div>
-                        <button class="gallery-card-zoom" aria-label="View larger">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="gallery-card reveal" data-category="hair">
-                    <div class="gallery-card-inner">
-                        <div class="gallery-card-bg"></div>
-                        <div class="gallery-card-overlay">
-                            <span class="gallery-card-cat">Hair</span>
-                            <h3>Modern Updo</h3>
-                            <p>Sculpted to perfection</p>
-                        </div>
-                        <button class="gallery-card-zoom" aria-label="View larger">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Row 2 -->
-                <div class="gallery-card gallery-card-wide reveal" data-category="makeover">
-                    <div class="gallery-card-inner">
-                        <div class="gallery-card-bg"></div>
-                        <div class="gallery-card-overlay">
-                            <span class="gallery-card-cat">Makeover</span>
-                            <h3>Full Transformation</h3>
-                            <p>Before &amp; after magic</p>
-                        </div>
-                        <button class="gallery-card-zoom" aria-label="View larger">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="gallery-card reveal" data-category="skincare">
-                    <div class="gallery-card-inner">
-                        <div class="gallery-card-bg"></div>
-                        <div class="gallery-card-overlay">
-                            <span class="gallery-card-cat">Skincare</span>
-                            <h3>Glow Treatment</h3>
-                            <p>Radiance from within</p>
-                        </div>
-                        <button class="gallery-card-zoom" aria-label="View larger">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Row 3 -->
-                <div class="gallery-card reveal" data-category="glam">
-                    <div class="gallery-card-inner">
-                        <div class="gallery-card-bg"></div>
-                        <div class="gallery-card-overlay">
-                            <span class="gallery-card-cat">Glam</span>
-                            <h3>Cocktail Party Look</h3>
-                            <p>Chic and sophisticated</p>
-                        </div>
-                        <button class="gallery-card-zoom" aria-label="View larger">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="gallery-card gallery-card-tall reveal" data-category="hair">
-                    <div class="gallery-card-inner">
-                        <div class="gallery-card-bg"></div>
-                        <div class="gallery-card-overlay">
-                            <span class="gallery-card-cat">Hair</span>
-                            <h3>Cascading Curls</h3>
-                            <p>Volume and movement</p>
-                        </div>
-                        <button class="gallery-card-zoom" aria-label="View larger">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="gallery-card reveal" data-category="bridal">
-                    <div class="gallery-card-inner">
-                        <div class="gallery-card-bg"></div>
-                        <div class="gallery-card-overlay">
-                            <span class="gallery-card-cat">Bridal</span>
-                            <h3>South Indian Bridal</h3>
-                            <p>Traditional beauty reimagined</p>
-                        </div>
-                        <button class="gallery-card-zoom" aria-label="View larger">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="gallery-card reveal" data-category="makeover">
-                    <div class="gallery-card-inner">
-                        <div class="gallery-card-bg"></div>
-                        <div class="gallery-card-overlay">
-                            <span class="gallery-card-cat">Makeover</span>
-                            <h3>Natural Glam</h3>
-                            <p>Less is more, beautifully</p>
-                        </div>
-                        <button class="gallery-card-zoom" aria-label="View larger">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Row 4 -->
-                <div class="gallery-card reveal" data-category="skincare">
-                    <div class="gallery-card-inner">
-                        <div class="gallery-card-bg"></div>
-                        <div class="gallery-card-overlay">
-                            <span class="gallery-card-cat">Skincare</span>
-                            <h3>Hydra Facial</h3>
-                            <p>Deep cleansing luxury</p>
-                        </div>
-                        <button class="gallery-card-zoom" aria-label="View larger">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="gallery-card gallery-card-wide reveal" data-category="bridal">
-                    <div class="gallery-card-inner">
-                        <div class="gallery-card-bg"></div>
-                        <div class="gallery-card-overlay">
-                            <span class="gallery-card-cat">Bridal</span>
-                            <h3>Engagement Look</h3>
-                            <p>Dreamy and ethereal</p>
-                        </div>
-                        <button class="gallery-card-zoom" aria-label="View larger">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Row 5 -->
-                <div class="gallery-card reveal" data-category="glam">
-                    <div class="gallery-card-inner">
-                        <div class="gallery-card-bg"></div>
-                        <div class="gallery-card-overlay">
-                            <span class="gallery-card-cat">Glam</span>
-                            <h3>Smoky Eye Masterpiece</h3>
-                            <p>Bold, dramatic, unforgettable</p>
-                        </div>
-                        <button class="gallery-card-zoom" aria-label="View larger">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="gallery-card reveal" data-category="hair">
-                    <div class="gallery-card-inner">
-                        <div class="gallery-card-bg"></div>
-                        <div class="gallery-card-overlay">
-                            <span class="gallery-card-cat">Hair</span>
-                            <h3>Braided Elegance</h3>
-                            <p>Intricate art in every strand</p>
-                        </div>
-                        <button class="gallery-card-zoom" aria-label="View larger">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="gallery-card reveal" data-category="makeover">
-                    <div class="gallery-card-inner">
-                        <div class="gallery-card-bg"></div>
-                        <div class="gallery-card-overlay">
-                            <span class="gallery-card-cat">Makeover</span>
-                            <h3>Soft Glam Daily</h3>
-                            <p>Everyday beauty elevated</p>
-                        </div>
-                        <button class="gallery-card-zoom" aria-label="View larger">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
-                        </button>
-                    </div>
-                </div>
+                </figure>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
@@ -399,7 +250,7 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-col footer-brand">
-                    <img src="logo-pink.png" alt="Magic Mirror" class="footer-logo">
+                    <img src="logo.png" alt="Magic Mirror" class="footer-logo">
                     <p>Where beauty meets artistry. Your transformation begins here.</p>
                     <div class="social-row">
                         <a href="#" aria-label="Instagram" class="social-btn">
