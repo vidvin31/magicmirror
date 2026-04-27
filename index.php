@@ -379,7 +379,7 @@
                         <p>Red carpet-ready looks for every celebration. Be the showstopper you were born to be.</p>
                         <a href="#booking" class="bento-link">Book Now <span>&rarr;</span></a>
                     </div>
-                    <div class="bento-thumb" style="background-image:url('images/gallery-12.jpg'); background-position: top;" aria-hidden="true"></div>
+                    <div class="bento-thumb" style="background-image:url('images/gallery-04.jpeg'); background-position: center top;" aria-hidden="true"></div>
                 </div>
                 <div class="bento-card reveal" data-tilt>
                     <div class="bento-glow"></div>
@@ -405,7 +405,7 @@
                         <p>From sculpted updos to effortless waves — hair that completes your vision.</p>
                         <a href="#booking" class="bento-link">Book Now <span>&rarr;</span></a>
                     </div>
-                    <div class="bento-thumb" style="background-image:url('images/skin-care.jpg')" aria-hidden="true"></div>
+                    <div class="bento-thumb" style="background-image:url('images/hair-1.jpeg'); background-position: center top;" aria-hidden="true"></div>
                 </div>
                 <div class="bento-card bento-accent reveal" data-tilt>
                     <div class="bento-glow"></div>
@@ -507,7 +507,7 @@
             </div>
             <div class="gallery-mosaic">
                 <figure class="mosaic-item mosaic-tall reveal">
-                    <div class="mosaic-inner" style="background-image:url('images/gallery-02.jpeg')" role="img" aria-label="Elegant bridal portrait by Magic Mirror Calicut"></div>
+                    <div class="mosaic-inner" style="background-image:url('images/gallery-29.jpeg'); background-position: center 20%;" role="img" aria-label="Signature bridal makeover by Magic Mirror Calicut"></div>
                     <figcaption class="mosaic-overlay">
                         <span class="mosaic-cat">Bridal</span>
                         <h4>Signature Bridal</h4>
@@ -542,7 +542,7 @@
                     </figcaption>
                 </figure>
                 <figure class="mosaic-item reveal">
-                    <div class="mosaic-inner" style="background-image:url('images/gallery-29.jpeg')" role="img" aria-label="South Indian bridal makeover with temple jewellery"></div>
+                    <div class="mosaic-inner" style="background-image:url('images/gallery-08.jpeg')" role="img" aria-label="South Indian bridal makeover with temple jewellery"></div>
                     <figcaption class="mosaic-overlay">
                         <span class="mosaic-cat">Bridal</span>
                         <h4>South Indian Bride</h4>
