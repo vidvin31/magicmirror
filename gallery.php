@@ -207,6 +207,8 @@
                 ['cat'=>'hair',      'label'=>'Hair',      'title'=>'Braided Elegance',         'desc'=>'Intricate art in every strand',                     'img'=>'images/hair-6.jpeg',     'class'=>''],
                 ['cat'=>'skincare',  'label'=>'Skincare',  'title'=>'Hydra Facial',             'desc'=>'Deep cleansing luxury',                             'img'=>'images/hair-7.jpeg',     'class'=>''],
                 ['cat'=>'skincare',  'label'=>'Skincare',  'title'=>'Skin Glow Ritual',         'desc'=>'Pre-bridal radiance therapy',                       'img'=>'images/hair-8.jpeg',     'class'=>''],
+                ['cat'=>'bridal',    'label'=>'Bridal',    'title'=>'South Indian Heritage',    'desc'=>'Temple jewellery, silk saree, timeless grace',       'img'=>'images/gallery-29.jpeg', 'class'=>'gallery-card-tall'],
+                ['cat'=>'skincare',  'label'=>'Skincare',  'title'=>'Luxe Facial Therapy',      'desc'=>'Advanced glow & rejuvenation treatments',            'img'=>'images/skin-care.jpg',   'class'=>'gallery-card-wide'],
             ];
             ?>
             <!-- Gallery Grid -->
